@@ -1,0 +1,6 @@
+Groupe 5 composé de :
+- Maxence de Torquat
+- Romain Schonholzer
+
+is_prime_prog :
+    Rien à dire si ce n’est peut être sur l’optimisation, puisque vous utilisez la technique de division par deux les grands nombres pourraient prendre du temps.
