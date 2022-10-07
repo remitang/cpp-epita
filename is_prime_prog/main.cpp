@@ -3,7 +3,7 @@
 
 int main()
 {
-    int i, n;
+    long long i, n;
 
     while (std::cin >> n)
     {
