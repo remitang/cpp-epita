@@ -11,13 +11,10 @@ int main()
 
         if (n <= 1)
             is_prime = false;
-        if (n == 2 || n == 3)
-            is_prime = true;
-        if (n % 2 == 0 || n % 3 == 0)
-            is_prime = false;
-        for (i = 5; i * i <= n; i = i + 6)
+
+        for (i = 2; i <= std::sqrt(n); ++i)
         {
-            if (n % i == 0 || n % (i + 2) == 0)
+            if (n % i == 0)
             {
                 is_prime = false;
                 break;
