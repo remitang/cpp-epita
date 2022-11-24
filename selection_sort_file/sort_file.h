@@ -27,7 +27,7 @@ void read_and_sort(std::ifstream& fi, std::ofstream& fo) {
     read_file_to_cont<T, C>(fi, c);
     my_selection_sort(c.begin(), c.end());
     for (auto &t : c)
-        fo << t << std::endl;
+        fo << t << "\n";
 }
 
 template<class T>
@@ -35,7 +35,7 @@ void read_and_sort_decide_container(std::ifstream& fi, std::ofstream& fo) {
   // read second line to decide container
   char cont_type;
   fi >> cont_type;
-  fo << cont_type << std::endl;
+  fo << cont_type << "\n";
   switch (cont_type)
   {
     case 'l':
@@ -56,7 +56,7 @@ void read_and_sort_decide_valuetype(std::ifstream& fi, std::ofstream& fo) {
   // read first line to decide value type
   char val_type;
   fi >> val_type;
-  fo << val_type << std::endl;
+  fo << val_type << "\n";
   switch(val_type)
   {
     case 'i':
