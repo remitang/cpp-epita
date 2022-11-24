@@ -6,6 +6,7 @@
 #include <list>
 #include <vector>
 #include <deque>
+#include <tuple>
 
 #include "my_sort.h"
 
@@ -37,7 +38,10 @@ template<class T, class C>
 void read_and_sort(std::ifstream& fi, std::ofstream& fo) {
     C c = {};
     read_file_to_cont<T, C>(fi, c);
-    my_selection_sort(c.begin(), c.end());
+    if constexpr (std::is_same_v<T, char> || std::is_same_v<T, int> || std::is_same_v<T, unsigned int>)
+        my_selection_sort(c.begin(), c.end(), [](T l, T r)->bool {return std::make_tuple(l%2, l) < std::make_tuple(r%2, r); });
+    else
+        my_selection_sort(c.begin(), c.end(), [](T l, T r)->bool {return l < r; });
     for (auto &t : c)
         fo << t << "\n";
 }
