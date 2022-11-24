@@ -7,7 +7,7 @@
 #include <vector>
 #include <deque>
 
-#include "my_sort.h"
+#include "my_sort.hpp"
 
 // Change here
 // All occurences of XXX need to be replaced with

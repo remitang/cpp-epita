@@ -8,7 +8,7 @@
 
 #include <string>
 
-#include "my_sort.h"
+#include "my_sort.hpp"
 
 template<class CONT>
 void print_me(const CONT& c)

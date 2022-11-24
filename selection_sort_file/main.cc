@@ -4,7 +4,7 @@
 
 #include <string>
 
-#include "sort_file.h"
+#include "sort_file.hpp"
 
 
 int main(int argc, char *argv[]) {
