@@ -32,7 +32,6 @@ void read_and_sort(std::ifstream& fi, std::ofstream& fo) {
 
 template<class T>
 void read_and_sort_decide_container(std::ifstream& fi, std::ofstream& fo) {
-  // read second line to decide container
   char cont_type;
   fi >> cont_type;
   fo << cont_type << "\n";
@@ -53,7 +52,6 @@ void read_and_sort_decide_container(std::ifstream& fi, std::ofstream& fo) {
 }
 
 void read_and_sort_decide_valuetype(std::ifstream& fi, std::ofstream& fo) {
-  // read first line to decide value type
   char val_type;
   fi >> val_type;
   fo << val_type << "\n";
